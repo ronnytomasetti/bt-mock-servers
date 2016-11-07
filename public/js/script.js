@@ -27,7 +27,7 @@ $(document).ready(function() {
 
 			console.log(response);
 
-			var title = $('<h1>').text('- RESULTS -');
+			var title = $('<h1>').text('- TEST RESULTS -');
 			var server = $('<h2>').text(response.url);
 			var status = $('<h2>').text('Status: ' + response.statusCode);
 			var priority = $('<h2>').text('Priority: ' + response.priority);
