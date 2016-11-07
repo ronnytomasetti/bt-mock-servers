@@ -1,0 +1,17 @@
+extends layouts/layout
+
+block content
+    .container
+        .row.text-center
+            hr
+            button.btn.btn-danger.btn-md(type='button', id='btn-run-test')
+                |   RUN TEST 
+                span.glyphicon.glyphicon-chevron-right
+            .progress
+                .progress-bar.progress-bar-danger.active(role='progressbar', aria-valuenow='0', aria-valuemin='0', aria-valuemax='100', style='width:0%')
+            hr
+            .text-center(id='test-results')
+
+    append scripts
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
+        script(src='/js/script.js')
